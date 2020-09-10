@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Registration Page </title>
+		<style>
+			li{
+				display: inline;
+			}
+			
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			/* Change the link color to #111 (black) on hover */
+			li a:hover {
+			  background-color: #111;
+			}
+			
+			.active {
+			  background-color: #4CAF50;
+			}
+			
+			h1 {
+				display: block;
+				color: white;
+				padding : 10px;
+				background-color: #111;
+			}
+			
+			h3 {
+				display: block;
+				color: #330066;
+				padding : 10px;
+				background-color: #ff99e6;
+				width: 38%;
+				border-radius:12px ;
+			}
+			
+			div.background {
+			  background: url(H2.1.jpg);
+			  background-repeat: no-repeat;
+			  border: 2px solid black;
+			  width: 40%;
+			  height: 100%;		  
+			}
+
+			div.transbox {
+			  margin: 30px;
+			  background-color: #ffffff;
+			  border: 1px solid black;
+			  opacity: 0.7;
+			  height: 100%;
+			}
+
+			div.transbox p {
+			  margin: 5%;
+			  font-weight: bold;
+			  color: #000000;
+			}
+			
+			.login{  
+				width: 300px;  
+				overflow: hidden;  
+				margin: auto;  
+				margin: 20 0 0 450px;  
+				padding: 80px;  
+				background: #9999ff;  
+				border-radius: 15px ;  		  
+			}
+			
+			
+			
+			label{
+				display: block;
+				color: #330033;
+				font-weight: bold;
+				margin-bottom: 0.5em;
+			}
+			
+			#log{  
+				width: 300px;  
+				height: 30px;  
+				border: none;  
+				border-radius: 17px;  
+				padding-left: 17px;  
+				color: blue;   
+			}
+			
+			#Address{
+				width: 300px;  
+				height:50px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h1><center> The WILD ONES </center></h1>
+		<h2><center> Canteen Portal </center></h2>
+		<ul>
+		  <li><a href="Website1.html">Home</a></li>
+		  <li><a href="login.html">Register</a></li>
+		  <li><a href="vmenu.html">Veg Menu</a></li>
+		  <li><a href="nvmenu.html">Non-Veg Menu</a></li>
+		  <li><a href="notices.html">Notices</a></li>
+		  <li style="float:right"><a class="active" href="contact.html">Contact Us</a></li>
+		 
+		</ul>
+		
+		<br><br>
+		
+		<h3> Register below to get updates of the canteen on your email: </h3>
+		
+		<h5>     </h5>
+		
+		
+		<div class="login">
+		  <center>
+		  <h1> Registration Form </h1>
+		  <form>
+			<label> <b> Name </b> </label>
+			<input type="text" name="Name" id="Name" placeholder="Name">
+				<br><br>
+			<label> <b> Roll Number </b> </label>
+			<input type="text" minlength="9" maxlength="9" name="roll" id="Roll" placeholder="Maximum 9 digits">
+				<br><br>
+			<label> <b> E-mail </b> </label>
+			<input type="email" name="mail" id="MailID" placeholder="E-mail">
+				<br><br>
+			<label> <b> Mobile Number </b> </label>
+			<input type="number" maxlength="10" pattern="[-+]?[0-9]" name="phone" id="PhoneNumber" placeholder="Maximum 10 digits">
+				<br><br>
+			<label> <b> Address </b> </label>
+			<input type="text" max="100" name="address" id="Address" placeholder="Address">
+				<br><br>
+			<input type="button" name="login" id="log" value="Click Here to register">
+		  </form>
+		  </center>
+		</div>
+		
+	</body>
+</html>
